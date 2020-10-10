@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1 id="show-modal">Add Bookmark <i class="fas fa-bookmark"></i></h1>
+
+    <!-- Bookmark -->
+    <div class="container" id="bookmarks-container">
+        <!-- <div class="item">
+            <i class="fas fa-times" id="delete-bookmark" title="Delete Bookmark"></i>
+            <div class="name">
+                <img src="favicon_io/favicon-32x32.png" alt="Favicon">
+                <a href="https://github.com/Wengg" target="_blank">Github</a>
+                
+            </div>
+        </div> -->
+    </div>
+
+    <!-- Modal -->
+    <div class="modal-container" id="modal">
+        <div class="modal">
+            <i class="fas fa-times close-icon" id="close-modal"></i>
+            <div class="modal-header">
+                <h3>Add Bookmark</h3>
+            </div>
+            <div class="modal-content">
+                <form id="bookmark-form">
+                    <div class="form-group">
+                        <!-- Website Name -->
+                        <label for="website-title" class="form-label">Title:</label>
+                        <input type="text" class="form-input" id="website-title">
+                    </div>
+                    <div class="form-group">
+                        <!-- Website URL -->
+                        <label for="website-url" class="form-label">Website URL:</label>
+                        <input type="text" class="form-input" id="website-url">
+                    </div>
+                    <button type="submit">Save</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Karen Weng Liang &#169; 2020 <a href="https://github.com/Wengg" target="_blank"><i class="fab fa-github"></i></a></i></p>
+    </div>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+
+</html>
